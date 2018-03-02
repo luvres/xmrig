@@ -23,9 +23,21 @@ izone/xmrig
 docker run -ti --rm --name Xmrig izone/xmrig \
 bash -c "xmrig -a cryptonight -o stratum+tcp://78.46.85.142:19931 -u fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX -p x -t 4"
 ```
+##### xmrig/xmrig
+```
+docker run -ti --rm --name Xmrig xmrig/xmrig \
+-o stratum+tcp://78.46.85.142:19931 -u fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX -p x -t 3
+```
+
 ```
 docker run -ti --rm --name Xmrig izone/xmrig \
 bash -c "xmrig -a cryptonight -o stratum+tcp://pool.bbscoin.xyz:3333 -u fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX -p x -t 4"
+```
+##### xmrig/xmrig
+```
+docker run -ti --rm --name Xmrig xmrig/xmrig \
+-o stratum+tcp://pool.bbscoin.xyz:3333 -u fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX -p x -t 3
+
 ```
 
 #### Run Bytecoin
