@@ -10,6 +10,14 @@ docker run -ti --rm --name Xmrig \
 -e THREADS="4" \
 izone/xmrig
 ```
+```
+docker run -ti --rm --name Xmrig \
+-e WALLET="fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX" \
+-e POOL="pool.bbscoin.xyz" \
+-e PORT="3333" \
+-e THREADS="4" \
+izone/xmrig
+```
 ##### Alternative
 ```
 docker run -ti --rm --name Xmrig izone/xmrig \
