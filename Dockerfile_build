@@ -9,8 +9,9 @@ ENV WALLET="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCd
 RUN \
 	cd \
 	&& apt-get update \
-	&& apt-get install -y libmicrohttpd10
-
-COPY xmrig /usr/bin
-
-CMD xmrig -a cryptonight -o stratum+tcp://$POOL:$PORT -u $WALLET -p x -t $THREADS
+	&& apt-get upgrade -y git build-essential cmake libuv1-dev libmicrohttpd-dev \
+  \
+	&& git clone https://github.com/xmrig/xmrig.git \
+	&& cd xmrig \
+	&& cmake . \
+	&& make 
