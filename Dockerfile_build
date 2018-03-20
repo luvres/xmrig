@@ -1,11 +1,6 @@
 FROM ubuntu:xenial
 MAINTAINER Leonardo Loures <luvres@hotmail.com>
 
-ENV WALLET="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \
-	POOL="pool.supportxmr.com" \
-	PORT="5555" \
-	THREADS="8"
-
 RUN \
 	cd \
 	&& apt-get update \

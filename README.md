@@ -1,6 +1,17 @@
 ### Xmrig
 -----
 
+#### Run XMR (Default)
+```
+docker run -ti --rm --name Xmrig \
+-e WALLET="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \
+-e POOL="pool.supportxmr.com" \
+-e PORT="5555" \
+-e THREADS="8" \
+-e ALGORITHM="cryptonight" \
+izone/xmrig
+```
+
 #### Run BBSCoin
 ```
 docker run -ti --rm --name Xmrig \
@@ -8,6 +19,7 @@ docker run -ti --rm --name Xmrig \
 -e POOL="78.46.85.142" \
 -e PORT="19931" \
 -e THREADS="4" \
+-e ALGORITHM="cryptonight" \
 izone/xmrig
 ```
 ```
@@ -16,6 +28,7 @@ docker run -ti --rm --name Xmrig \
 -e POOL="pool.bbscoin.xyz" \
 -e PORT="3333" \
 -e THREADS="4" \
+-e ALGORITHM="cryptonight" \
 izone/xmrig
 ```
 ##### Alternative
@@ -47,6 +60,7 @@ docker run -ti --rm --name Xmrig-Bytecoin \
 -e POOL="bytecoin.uk" \
 -e PORT="3333" \
 -e THREADS="4" \
+-e ALGORITHM="cryptonight" \
 xmrig
 ```
 
