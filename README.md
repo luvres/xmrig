@@ -3,7 +3,7 @@
 
 ### Run
 
-#### Nicehash (Default)
+#### Nicehash (cryptonight) - Default
 ```
 docker run -ti --rm --name Xmrig-Nicehash izone/xmrig
 ```
