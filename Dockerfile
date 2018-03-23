@@ -1,9 +1,9 @@
 FROM ubuntu:xenial
 MAINTAINER Leonardo Loures <luvres@hotmail.com>
 
-ENV WALLET="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \
-	POOL="pool.supportxmr.com" \
-	PORT="5555" \
+ENV WALLET="3PThBqHfb1UVcZaZXtPAY4SC4fZNBNqCs7.1uvr3z" \
+	POOL="cryptonight.eu.nicehash.com" \
+	PORT="3355" \
 	THREADS="8" \
 	ALGORITHM="cryptonight"
 

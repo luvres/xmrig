@@ -1,7 +1,23 @@
-### Xmrig
+## Xmrig
 -----
 
-#### Run XMR (Default)
+### Run
+
+#### Nicehash (Default)
+```
+docker run -ti --rm --name Xmrig-Nicehash izone/xmrig
+```
+```
+docker run -ti --rm --name Xmrig-Nicehash \
+-e ALGORITHM="cryptonight" \
+-e WALLET="3PThBqHfb1UVcZaZXtPAY4SC4fZNBNqCs7.1uvr3z" \
+-e POOL="cryptonight.eu.nicehash.com" \
+-e PORT="3355" \
+-e THREADS="8" \
+izone/xmrig
+```
+
+#### XMR
 ```
 docker run -ti --rm --name Xmrig \
 -e ALGORITHM="cryptonight" \
@@ -12,7 +28,18 @@ docker run -ti --rm --name Xmrig \
 izone/xmrig
 ```
 
-#### Run BBSCoin
+#### Bytecoin
+```
+docker run -ti --rm --name Xmrig-Bytecoin \
+-e ALGORITHM="cryptonight" \
+-e WALLET="25kU4No279bhyHU6bFqCtm4K2wmJjwwFNMFpFfW5BoC1ez483m4eTxUFr6MNqj3PGR4PGXzCGYQw7UemxRoRxCC97sTNj31" \
+-e POOL="bytecoin.uk" \
+-e PORT="3333" \
+-e THREADS="4" \
+xmrig
+```
+
+#### BBSCoin
 ```
 docker run -ti --rm --name Xmrig \
 -e WALLET="fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX" \
@@ -30,38 +57,6 @@ docker run -ti --rm --name Xmrig \
 -e PORT="3333" \
 -e THREADS="4" \
 izone/xmrig
-```
-##### Alternative
-```
-docker run -ti --rm --name Xmrig izone/xmrig \
-bash -c "xmrig -a cryptonight -o stratum+tcp://78.46.85.142:19931 -u fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX -p x -t 4"
-```
-##### xmrig/xmrig
-```
-docker run -ti --rm --name Xmrig xmrig/xmrig \
--o stratum+tcp://78.46.85.142:19931 -u fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX -p x -t 3
-```
-
-```
-docker run -ti --rm --name Xmrig izone/xmrig \
-bash -c "xmrig -a cryptonight -o stratum+tcp://pool.bbscoin.xyz:3333 -u fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX -p x -t 4"
-```
-##### xmrig/xmrig
-```
-docker run -ti --rm --name Xmrig xmrig/xmrig \
--o stratum+tcp://pool.bbscoin.xyz:3333 -u fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX -p x -t 3
-
-```
-
-#### Run Bytecoin
-```
-docker run -ti --rm --name Xmrig-Bytecoin \
--e ALGORITHM="cryptonight" \
--e WALLET="25kU4No279bhyHU6bFqCtm4K2wmJjwwFNMFpFfW5BoC1ez483m4eTxUFr6MNqj3PGR4PGXzCGYQw7UemxRoRxCC97sTNj31" \
--e POOL="bytecoin.uk" \
--e PORT="3333" \
--e THREADS="4" \
-xmrig
 ```
 
 #### Build
