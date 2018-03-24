@@ -77,3 +77,4 @@ docker build -t izone/xmrig .
 ```
 docker build -t izone/xmrig:build -f Dockerfile_build .
 ```
+
