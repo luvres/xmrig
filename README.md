@@ -17,7 +17,7 @@ docker run -ti --rm --name Xmrig-Nicehash \
 izone/xmrig
 ```
 
-#### XMR
+#### XMR Monero
 ```
 docker run -ti --rm --name Xmrig \
 -e ALGORITHM="cryptonight" \
@@ -28,7 +28,7 @@ docker run -ti --rm --name Xmrig \
 izone/xmrig
 ```
 
-#### Bytecoin
+#### BCN Bytecoin
 ```
 docker run -ti --rm --name Xmrig-Bytecoin \
 -e ALGORITHM="cryptonight" \
@@ -39,7 +39,7 @@ docker run -ti --rm --name Xmrig-Bytecoin \
 xmrig
 ```
 
-#### BBSCoin
+#### BBS Coin
 ```
 docker run -ti --rm --name Xmrig \
 -e WALLET="fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX" \
@@ -56,6 +56,17 @@ docker run -ti --rm --name Xmrig \
 -e POOL="pool.bbscoin.xyz" \
 -e PORT="3333" \
 -e THREADS="4" \
+izone/xmrig
+```
+
+### QWC Qwerty coin
+```
+docker run -ti --rm --name Qwerty \
+-e WALLET="QWC1GWTaTdNCGBnQPspUYZi3WUty9mDJPgCM3ohTupC1NjhL1uTzHed2xC3VV79P57A3L5ZWrzKC8a4hXifqwuyd4yQSrY82EK" \
+-e POOL="78.46.85.142" \
+-e PORT="8261" \
+-e THREADS="4" \
+-e ALGORITHM="cryptonight" \
 izone/xmrig
 ```
 
