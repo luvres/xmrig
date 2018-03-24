@@ -1,11 +1,13 @@
 FROM ubuntu:xenial
 MAINTAINER Leonardo Loures <luvres@hotmail.com>
 
-ENV WALLET="3PThBqHfb1UVcZaZXtPAY4SC4fZNBNqCs7.1uvr3z" \
+ENV \
+	ALGORITHM="cryptonight" \
 	POOL="cryptonight.eu.nicehash.com" \
 	PORT="3355" \
-	THREADS="8" \
-	ALGORITHM="cryptonight"
+	USER="3PThBqHfb1UVcZaZXtPAY4SC4fZNBNqCs7.1uvr3z" \
+	USERPASS="x" \
+	THREADS="8" 
 
 RUN \
 	cd \
@@ -14,4 +16,4 @@ RUN \
 
 COPY xmrig /usr/bin
 
-CMD xmrig -a $ALGORITHM -o stratum+tcp://$POOL:$PORT -u $WALLET -p x -t $THREADS
+CMD xmrig -a $ALGORITHM -o stratum+tcp://$POOL:$PORT -u $USER -p $USERPASS -t $THREADS
