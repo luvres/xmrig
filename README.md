@@ -36,7 +36,7 @@ docker run -ti --rm --name Xmrig-Bytecoin \
 -e POOL="bytecoin.uk" \
 -e PORT="3333" \
 -e THREADS="4" \
-xmrig
+izone/xmrig
 ```
 
 #### BBS Coin
