@@ -59,7 +59,7 @@ docker run -ti --rm --name Xmrig \
 izone/xmrig
 ```
 
-### QWC Qwerty coin
+#### QWC Qwerty coin
 ```
 docker run -ti --rm --name Qwerty \
 -e WALLET="QWC1GWTaTdNCGBnQPspUYZi3WUty9mDJPgCM3ohTupC1NjhL1uTzHed2xC3VV79P57A3L5ZWrzKC8a4hXifqwuyd4yQSrY82EK" \
