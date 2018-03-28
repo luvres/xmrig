@@ -18,6 +18,18 @@ docker run -ti --rm --name Xmrig-Nicehash \
 izone/xmrig
 ```
 
+#### Minergate XMR
+```
+docker run -ti --rm --name Xmrig-Minergate \
+-e ALGORITHM="cryptonight" \
+-e POOL="xmr.pool.minergate.com" \
+-e PORT="45560" \
+-e USER="1uvr3z@gmail.com" \
+-e USERPASS="x" \
+-e THREADS="$(nproc)" \
+izone/xmrig
+```
+
 #### XMR Monero
 ```
 docker run -ti --rm --name Xmrig \
