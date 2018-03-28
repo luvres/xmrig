@@ -18,9 +18,21 @@ docker run -ti --rm --name Xmrig-Nicehash \
 izone/xmrig
 ```
 
+#### XMR Monero
+```
+docker run -ti --rm --name Xmrig \
+-e ALGORITHM="cryptonight" \
+-e POOL="pool.supportxmr.com" \
+-e PORT="5555" \
+-e USER="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \
+-e USERPASS="fx8350" \
+-e THREADS="$(nproc)" \
+izone/xmrig
+```
+
 #### Minergate XMR
 ```
-docker run -ti --rm --name Xmrig-Minergate \
+docker run -ti --rm --name Xmrig-Minergate-xmr \
 -e ALGORITHM="cryptonight" \
 -e POOL="xmr.pool.minergate.com" \
 -e PORT="45560" \
@@ -30,14 +42,14 @@ docker run -ti --rm --name Xmrig-Minergate \
 izone/xmrig
 ```
 
-#### XMR Monero
+#### Minergate BCN
 ```
-docker run -ti --rm --name Xmrig \
+docker run -ti --rm --name Xmrig-Minergate-bcn \
 -e ALGORITHM="cryptonight" \
--e POOL="pool.supportxmr.com" \
--e PORT="5555" \
--e USER="43oMPyqNyYmP5S4gatvSPKPLD2ysjpdyq63BJx2JWUjHVVCTFTn4ccy9LC1cGGUvApCdCGrECuSf9eo2WHBckfBxNx9Dqkf" \
--e USERPASS="fx8350" \
+-e POOL="bcn.pool.minergate.com" \
+-e PORT="45550" \
+-e USER="1uvr3z@gmail.com" \
+-e USERPASS="x" \
 -e THREADS="$(nproc)" \
 izone/xmrig
 ```
