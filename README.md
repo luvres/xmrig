@@ -100,6 +100,19 @@ docker run -ti --rm --name Xmrig-qwc \
 izone/xmrig
 ```
 
+#### BMC Browsermine
+```
+docker run -ti --rm --name Xmrig-bmc \
+-e ALGORITHM="cryptonight" \
+-e POOL="pool.bmnr.pw" \
+-e PORT="4444" \
+-e USER="2361631" \
+-e USERPASS="x" \
+-e THREADS="$(nproc)" \
+izone/xmrig
+```
+
+-----
 #### Build
 ```
 docker build -t izone/xmrig .
