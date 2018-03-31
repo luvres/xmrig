@@ -2,6 +2,7 @@ FROM ubuntu:xenial
 MAINTAINER Leonardo Loures <luvres@hotmail.com>
 
 ENV \
+	DONATE="1"
 	ALGORITHM="cryptonight" \
 	POOL="cryptonight.eu.nicehash.com" \
 	PORT="3355" \
@@ -16,4 +17,4 @@ RUN \
 
 COPY xmrig /usr/bin
 
-CMD xmrig --donate-level=1 -a $ALGORITHM -o stratum+tcp://$POOL:$PORT -u $USER -p $USERPASS -t $THREADS--donate-level=1
+CMD xmrig --donate-level=$DONATE -a $ALGORITHM -o stratum+tcp://$POOL:$PORT -u $USER -p $USERPASS -t $THREADS--donate-level=1
