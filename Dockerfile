@@ -2,7 +2,7 @@ FROM ubuntu:xenial
 MAINTAINER Leonardo Loures <luvres@hotmail.com>
 
 ENV \
-	DONATE="1"
+	DONATE="1" \
 	ALGORITHM="cryptonight" \
 	POOL="cryptonight.eu.nicehash.com" \
 	PORT="3355" \
