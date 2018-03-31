@@ -17,4 +17,4 @@ RUN \
 
 COPY xmrig /usr/bin
 
-CMD xmrig --donate-level=$DONATE -a $ALGORITHM -o stratum+tcp://$POOL:$PORT -u $USER -p $USERPASS -t $THREADS--donate-level=1
+CMD xmrig --donate-level=$DONATE -a $ALGORITHM -o stratum+tcp://$POOL:$PORT -u $USER -p $USERPASS -t $THREADS
