@@ -56,46 +56,46 @@ izone/xmrig
 
 #### BCN Bytecoin
 ```
-docker run -ti --rm --name Xmrig-Bytecoin \
+docker run -ti --rm --name Xmrig-bcn \
 -e ALGORITHM="cryptonight" \
 -e POOL="bytecoin.uk" \
 -e PORT="3333" \
 -e USER="25kU4No279bhyHU6bFqCtm4K2wmJjwwFNMFpFfW5BoC1ez483m4eTxUFr6MNqj3PGR4PGXzCGYQw7UemxRoRxCC97sTNj31" \
--e USERPASS="fx8350" \
+-e USERPASS="x" \
 -e THREADS="$(nproc)" \
 izone/xmrig
 ```
 
 #### BBS Coin
 ```
-docker run -ti --rm --name Xmrig \
+docker run -ti --rm --name Xmrig-bbs \
 -e ALGORITHM="cryptonight" \
 -e POOL="78.46.85.142" \
 -e PORT="19931" \
 -e USER="fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX" \
--e USERPASS="fx8350" \
+-e USERPASS="x" \
 -e THREADS="$(nproc)" \
 izone/xmrig
 ```
 ```
-docker run -ti --rm --name Xmrig \
+docker run -ti --rm --name Xmrig-bbs \
 -e ALGORITHM="cryptonight" \
 -e POOL="pool.bbscoin.xyz" \
 -e PORT="3333" \
 -e USER="fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX" \
--e USERPASS="fx8350" \
+-e USERPASS="x" \
 -e THREADS="$(nproc)" \
 izone/xmrig
 ```
 
 #### QWC Qwerty coin
 ```
-docker run -ti --rm --name Qwerty \
+docker run -ti --rm --name Xmrig-qwc \
 -e ALGORITHM="cryptonight" \
 -e POOL="78.46.85.142" \
 -e PORT="8261" \
 -e USER="QWC1GWTaTdNCGBnQPspUYZi3WUty9mDJPgCM3ohTupC1NjhL1uTzHed2xC3VV79P57A3L5ZWrzKC8a4hXifqwuyd4yQSrY82EK" \
--e USERPASS="fx8350" \
+-e USERPASS="x" \
 -e THREADS="$(nproc)" \
 izone/xmrig
 ```
