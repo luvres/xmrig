@@ -18,6 +18,19 @@ docker run -ti --rm --name Xmrig-Nicehash \
 izone/xmrig
 ```
 
+## DOGE Simpleco.in
+#-------------------
+```
+docker run -ti --rm --name Xmrig-doge \
+-e ALGORITHM="cryptonight" \
+-e POOL="simpleco.in" \
+-e PORT="8081" \
+-e USER="luvres.7873" \
+-e USERPASS="x" \
+-e THREADS="$(nproc)" \
+izone/xmrig
+```
+
 #### XMR Monero
 ```
 docker run -ti --rm --name Xmrig \
