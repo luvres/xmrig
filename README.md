@@ -125,6 +125,18 @@ docker run -ti --rm --name Xmrig-bmc \
 izone/xmrig
 ```
 
+#### NBR Niobio Cash
+```
+docker run -ti --rm --name Xmrig-nbr \
+-e ALGORITHM="cryptonight" \
+-e POOL="niobio.ingest.cryptoknight.cc" \
+-e PORT="50101" \
+-e USER="NDui5rcpHvP2yLSwMWWStHYR4SV1L9syN3Vf97x2x3NqPRQwxo3nySe5S9ScysyrGc4c72mJ1M43K29DXuwM9QJH29ds9tU" \
+-e USERPASS="x" \
+-e THREADS="$(nproc)" \
+izone/xmrig
+```
+
 -----
 #### Build
 ```
