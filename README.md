@@ -1,4 +1,4 @@
-## Xmrig
+## Xmrig cryptonight (default) or cryptonight-lite
 -----
 
 ### Run
