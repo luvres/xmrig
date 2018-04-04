@@ -19,7 +19,6 @@ izone/xmrig
 ```
 
 ## DOGE Simpleco.in
-#-------------------
 ```
 docker run -ti --rm --name Xmrig-doge \
 -e ALGORITHM="cryptonight" \
