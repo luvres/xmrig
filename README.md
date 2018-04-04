@@ -18,7 +18,7 @@ docker run -ti --rm --name Xmrig-Nicehash \
 izone/xmrig
 ```
 
-## DOGE Simpleco.in
+#### DOGE Simpleco.in
 ```
 docker run -ti --rm --name Xmrig-doge \
 -e ALGORITHM="cryptonight" \
