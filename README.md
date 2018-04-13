@@ -47,7 +47,7 @@ izone/xmrig
 docker run -ti --rm --name Xmrig-Minergate-xmr \
 -e ALGORITHM="cryptonight" \
 -e POOL="xmr.pool.minergate.com" \
--e PORT="45560" \
+-e PORT="45700" \
 -e USER="1uvr3z@gmail.com" \
 -e USERPASS="x" \
 -e THREADS="$(nproc)" \
