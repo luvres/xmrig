@@ -104,8 +104,8 @@ izone/xmrig
 ```
 docker run -ti --rm --name Xmrig-qwc \
 -e ALGORITHM="cryptonight" \
--e POOL="78.46.85.142" \
--e PORT="8261" \
+-e POOL="qwertycoin.site" \
+-e PORT="3333" \
 -e USER="QWC1GWTaTdNCGBnQPspUYZi3WUty9mDJPgCM3ohTupC1NjhL1uTzHed2xC3VV79P57A3L5ZWrzKC8a4hXifqwuyd4yQSrY82EK" \
 -e USERPASS="x" \
 -e THREADS="$(nproc)" \
