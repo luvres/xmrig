@@ -79,20 +79,20 @@ izone/xmrig
 ```
 
 #### BBS Coin
+##### Web Wallet
 ```
 docker run -ti --rm --name Xmrig-bbs \
--e ALGORITHM="cryptonight" \
--e POOL="78.46.85.142" \
--e PORT="19931" \
--e USER="fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX" \
+-e ALGORITHM="cryptonight_v7" -e POOL="pool.bbscoin.xyz" \
+-e PORT="3333" \
+-e USER="fyTo1z3Cw961pVVyxjmYGjW3hXipzT6q3gzYCnWpBGAv7tYYgTdt4WfKEBpzjVZ8UgjFAn3iLBnoCB8VzNjpPVjL25J8AyW3E" \
 -e USERPASS="x" \
 -e THREADS="$(nproc)" \
 izone/xmrig
 ```
+##### Local Wallet
 ```
 docker run -ti --rm --name Xmrig-bbs \
--e ALGORITHM="cryptonight" \
--e POOL="pool.bbscoin.xyz" \
+-e ALGORITHM="cryptonight_v7" -e POOL="pool.bbscoin.xyz" \
 -e PORT="3333" \
 -e USER="fyTZ7jLeycCEYMpexDcUMCaxiErw7mFJDNMAJNShyWRA1dnf7ZmHgj8Zwd61VKiEjHDd8TsgZJL9h4ZdbYBdfCHv32d62EsgX" \
 -e USERPASS="x" \
