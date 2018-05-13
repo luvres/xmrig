@@ -1,4 +1,4 @@
-## Xmrig cryptonight (default) or cryptonight-lite
+## Xmrig cryptonight (default), cryptonight_v7 or cryptonight-lite
 -----
 
 ### Run
@@ -78,7 +78,7 @@ docker run -ti --rm --name Xmrig-bcn \
 izone/xmrig
 ```
 
-#### BBS Coin
+#### BBS Coin (cryptonight_v7)
 ##### Web Wallet
 ```
 docker run -ti --rm --name Xmrig-bbs \
