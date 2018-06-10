@@ -4,6 +4,7 @@ MAINTAINER Leonardo Loures <luvres@hotmail.com>
 ENV \
 	DONATE="1" \
 	ALGORITHM="cryptonight" \
+	VARIANT="0" \
 	POOL="cryptonight.eu.nicehash.com" \
 	PORT="3355" \
 	USER="3PThBqHfb1UVcZaZXtPAY4SC4fZNBNqCs7.1uvr3z" \
@@ -17,4 +18,4 @@ RUN \
 
 COPY xmrig /usr/bin
 
-CMD xmrig --donate-level=$DONATE -a $ALGORITHM -o stratum+tcp://$POOL:$PORT -u $USER -p $USERPASS -t $THREADS
+CMD xmrig --donate-level=$DONATE -a $ALGORITHM --variant=$VARIANT -o stratum+tcp://$POOL:$PORT -u $USER -p $USERPASS -t $THREADS
